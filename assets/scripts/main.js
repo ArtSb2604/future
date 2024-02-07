@@ -188,3 +188,40 @@ new hoverEffect({
   displacementImage: "https://i.postimg.cc/QNTRDRks/4.png"
 });
 
+new hoverEffect({
+  parent: document.querySelector(".team_img"),
+  intensity: 0.5,
+  image1: "/assets/images/Rectangle-5.png",
+  image2: "/assets/images/Rectangle-5.png",
+  displacementImage: "https://i.postimg.cc/QNTRDRks/4.png"
+});
+
+$('.portfolio-img_1').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04
+});
+
+$('.portfolio-img_2').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04
+});
+
+$('.team_img').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04
+});
+
+$('.ripple').ripples({
+  resolution: 256,
+  dropRadius: 20,
+  perturbance: 0.04
+});
+
+$(document).ready(function(){
+  $(".hamburger-lines").click(function(){
+    $(".hamburger-lines, .nav-mob-menu").toggleClass('active');
+  });
+});

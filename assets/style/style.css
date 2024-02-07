@@ -865,9 +865,10 @@ main {
     height: 90%;
 }
 
-.team-img img {    
-    width: 50vw;
-    height: auto;
+.team_img {    
+    width: 98rem;
+    height: 95rem;
+    z-index: 1;
 }
 
 .team-img svg {    
@@ -1301,8 +1302,8 @@ input[type="radio"]:checked + label {
     line-height: normal;
 }
 
-.project-bottom-img img {
-    height: auto;
+.project-bottom-img div {
+    height: 62rem;
     width: 92rem;
 }
 
@@ -1434,12 +1435,12 @@ input[type="radio"]:checked + label {
     gap: 1rem;
 }
 
-.project-cards img:nth-child(2), .project-cards img:nth-child(4) {
+.project-cards .ripple:nth-child(2), .project-cards .ripple:nth-child(4) {
     width: 36.6rem;
     height: 30rem;
 }
 
-.project-cards img:nth-child(3) {
+.project-cards .ripple:nth-child(3) {
     width: 53rem;
     height: 29.8rem;
 }
@@ -1493,9 +1494,11 @@ input[type="radio"]:checked + label {
     gap: 7.5rem;
 }
 
-.design-block img {
-    width: 100%;
+.design-block div {
+    width: 167rem;
+    height: 94rem;
 }
+
 
 .design-contacts {
     height: 100%;
@@ -1732,6 +1735,39 @@ footer a {
     display: none;
 }
 
+.main__star_1, .main__star_2 {
+    animation: scaleAnimation 3s infinite alternate; 
+}
+
+.main__star_3 {
+    animation: scaleAnimation1 3s infinite alternate; 
+}
+
+.star_1, .star_2 {
+    animation: scaleAnimation 3s infinite alternate; 
+}
+
+.star_3 {
+    animation: scaleAnimation1 3s infinite alternate; 
+}
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1); /* Начальный размер элемента */
+  }
+  100% {
+    transform: scale(2.2); /* Конечный размер элемента */
+  }
+}
+
+@keyframes scaleAnimation1 {
+    0% {
+      transform: scale(1); /* Начальный размер элемента */
+    }
+    100% {
+      transform: scale(0.5); /* Конечный размер элемента */
+    }
+  }
 
 @media screen and (max-width: 800px) {
 
@@ -1955,6 +1991,7 @@ footer a {
     .offer-bottom-left h1 {
         font-size: 10rem;    
         line-height: 90%;
+        z-index: 999;
     }
 
     .offer-bottom-left p {
@@ -2143,7 +2180,7 @@ footer a {
         top: 12rem;
     }
 
-    .team-img img {
+    .team_img {
         width: 37rem;
         height: 38rem;
     }
@@ -2402,28 +2439,29 @@ footer a {
 
     .main-btn_blue {
         font-size: 1.9rem;
-        width: 16.5rem;
+        width: 22rem;
         height: 4.3rem;
     }
 
     .main-btn_white a {
         font-size: 1.9rem;
-        width: 17.7rem !important;
+        width: 11.7rem !important;
         height: 4.3rem;
     }
+    
 
     .main-btn_white div {
-        width: 17.7rem !important;
+        width: 11.7rem !important;
         height: 4.3rem;
     }
 
     .main-btn_white.big {
-        width: 17.7rem !important;
+        width: 11.7rem !important;
     }
 
     .main-btn_blue::after {
         height: 4.3rem;
-        width: 16.5rem;
+        width: 22rem;
     }
 
     .project-block-btn {
@@ -2568,4 +2606,125 @@ footer a {
     .black-theme .contacts-elem {
         background-image: url('data:image/svg+xml,<svg width="370.000000" height="60.500000" viewBox="0 0 370 60.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Rectangle 15" d="M0 60.5L0 50.5Q0 29.582 14.791 14.791Q29.582 0 50.5 0L319.5 0Q340.418 0 355.209 14.791Q370 29.582 370 50.5L370 60.5L369 60.5L369 50.5Q369 29.9961 354.502 15.498Q340.004 1 319.5 1L50.5 1Q29.9961 1 15.498 15.498Q1 29.9961 1 50.5L1 60.5L0 60.5Z" fill="%23FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
     }
+
+    .team_img {
+        width: 37rem !important;
+    }
+
+    .offer-img .wrapper {
+        width: 37rem !important;
+        right: 0;
+        top: 0;
+    }
+
+    .contacts {
+        padding-bottom: 10rem;
+    }
+
+    .black-theme .header-mob, .black-theme .nav-mob-menu {
+        background: rgba(12, 12, 12, 0.35);
+    }
+
+    .black-theme .bottom-nav {
+        background: rgb(14, 16, 31);
+    }
+
+    .black-theme .bottom-nav svg path {
+        stroke: #979797;
+    }
+
+    .black-theme .bottom-nav svg rect {
+        stroke: #979797;
+    }
+
+    .black-theme .bottom-nav .active svg path {
+        stroke: #2DB1FB;
+    }
+
+    .nav-mob-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 25rem;
+        z-index: 9999;
+        backdrop-filter: blur(0.3rem);
+        background: rgba(246, 246, 247, 0.35);
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+    }
+
+    .nav-mob-menu.active {
+        transform: translateY(0%);
+    }
+
+    .hamburger-lines {
+        z-index: 99999;
+    }
+
+    .nav-mob-menu ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .black-theme .achievements__elem {
+        background-image: url('data:image/svg+xml,<svg width="370.000000" height="348.000000" viewBox="0 0 370 348" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Rectangle 6" d="M352.928 0Q360 0 365 5Q370 10.001 370 17.0723L370 322.5Q370 333.062 362.531 340.531Q355.062 348 344.5 348L25.5 348Q14.9375 348 7.46875 340.531Q0 333.062 0 322.5L0 25.5Q0 14.9375 7.46875 7.46875Q14.9375 0 25.5 0L251.355 0L251.355 1L25.5 1Q15.3516 1 8.17578 8.17578Q1 15.3516 1 25.5L1 322.5Q1 332.648 8.17578 339.824Q15.3516 347 25.5 347L344.5 347Q354.648 347 361.824 339.824Q369 332.648 369 322.5L369 17.0723Q369 10.415 364.293 5.70703Q359.586 1 352.928 1L352.928 0Z" fill="%23FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+        background-size: 100% 100%;
+    }
+
+    .black-theme .achievements__elem.no-year {
+        background-image: url('data:image/svg+xml,<svg width="369.000000" height="347.000000" viewBox="0 0 369 347" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><desc>Created with Pixso.</desc><defs/><path id="Rectangle 6" d="M369 16.5723L369 322C369 335.807 357.807 347 344 347L25 347C11.1934 347 0 335.807 0 322L0 25C0 11.1934 11.1934 0 25 0L352.428 0C361.58 0 369 7.41992 369 16.5723ZM368 16.5723L368 322Q368 326.971 366.242 331.214Q364.484 335.456 360.971 338.971Q357.455 342.485 353.213 344.242Q348.971 346 344 346L25 346Q20.0293 346 15.7871 344.243Q11.5449 342.485 8.0293 338.971Q4.51562 335.457 2.75781 331.215Q1 326.972 1 322L1 25Q1 20.0293 2.75781 15.7871Q4.51562 11.5439 8.0293 8.0293Q11.5449 4.51465 15.7871 2.75781Q20.0293 1 25 1L352.428 1Q355.654 1 358.406 2.14062Q361.158 3.28027 363.439 5.56055Q365.719 7.8418 366.859 10.5947Q368 13.3467 368 16.5723Z" fill="%23FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/></svg>');
+        background-size: 100% 100%;
+    }
+
+    .black-theme .form-radio label {
+        background: none;
+        border: 0.1rem solid #fff;
+        color: #fff;
+    }
+
+    .design-block div {
+        width: 39rem;
+        height: 21rem;
+      }
+
+      .project-cards .ripple:nth-child(3) {
+        width: 27rem;
+        height: 15rem;
+      }
+
+      .project-cards .ripple:nth-child(2), .project-cards .ripple:nth-child(4) {
+        width: 10rem;
+        height: 15rem;
+      }
+
+      .project-bottom-img div {
+        height: 20rem;
+        width: 37rem;
+      }
+
+      .project .main-btn_blue {
+        width: 16.5rem;
+      }
+
+      .main-btn_blue::after {
+        width: 16.5rem;
+      }
+
+      .project .main-btn_white a {
+        width: 17rem !important;
+      }
+
+      .main-btn_white div {
+        width: 17rem !important;
+      }
+
+      .main-btn_white.big {
+        width: 17rem !important;
+      }
 }

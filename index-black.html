@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
 </head>
 <body class="black-theme">
     <div class="background"></div>
@@ -44,6 +46,81 @@
                 <a href="" class="btn-form">Связаться с нами</a>
             </div>
         </header>
+        <header class="header-mob">
+            <a class="logo">
+                <img src="assets/images/logo.png">
+            </a>
+            <div class="header-mob-block">
+                <a class="header-mob-button">СВЯЗАТЬСЯ</a>
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </div>
+            <div class="nav-mob-menu">
+                <ul>
+                    <li class="active"><a href="">Главная</a></li>
+                    <li><a href="">Портфолио</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </header>
+        <nav class="bottom-nav">
+            <a class="bottom-nav__elem active">
+                <svg width="19.460938" height="21.122070" viewBox="0 0 19.4609 21.1221" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <path id="Shape sp-43359-0-0" d="M17.4023 7.77979C18.3984 8.72388 18.9609 10.0354 18.9609 11.407L18.9609 19.6221C18.9609 20.1743 18.5137 20.6221 17.9609 20.6221L14.3457 20.6221C13.793 20.6221 13.3457 20.1743 13.3457 19.6221L13.3457 15.491C13.3457 14.5237 12.5195 13.7393 11.5 13.7393L7.96094 13.7393C6.94141 13.7393 6.11523 14.5237 6.11523 15.491L6.11523 19.6221C6.11523 20.1743 5.66797 20.6221 5.11523 20.6221L1.5 20.6221C0.947266 20.6221 0.5 20.1743 0.5 19.6221L0.5 11.407C0.5 10.0354 1.0625 8.72388 2.05859 7.77979L9.73047 0.5L17.4023 7.77979Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+                </svg>
+                
+                Главная          
+            </a>
+            <a class="bottom-nav__elem">
+                <svg width="18.787109" height="19.545410" viewBox="0 0 18.7871 19.5454" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <path id="Rectangle" d="M5.20117 0L13.5625 0C14.1152 0 14.5625 0.447754 14.5625 1L14.5625 8.00659C14.5625 10.8679 12.2422 13.1873 9.38281 13.1873C6.52148 13.1873 4.20117 10.8679 4.20117 8.00659L4.20117 1C4.20117 0.447754 4.64844 0 5.20117 0Z" fill="#D8D8D8" fill-opacity="0" fill-rule="evenodd"/>
+                    <path id="Rectangle" d="M13.5625 0C14.1152 0 14.5625 0.447754 14.5625 1L14.5625 8.00659C14.5625 10.8679 12.2422 13.1873 9.38281 13.1873C6.52148 13.1873 4.20117 10.8679 4.20117 8.00659L4.20117 1C4.20117 0.447754 4.64844 0 5.20117 0L13.5625 0ZM13.5625 1L13.5625 8.00659C13.5625 10.3154 11.6914 12.1873 9.38281 12.1873C7.07227 12.1873 5.20117 10.3154 5.20117 8.00659L5.20117 1L13.5625 1Z" fill="#151724" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    <rect id="Rectangle" x="8.900391" y="12.716309" width="1.000000" height="3.296824" fill="#151724" fill-opacity="1.000000"/>
+                    <rect id="Rectangle" x="8.900391" y="12.716309" width="1.000000" height="3.296824" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                    <rect id="Rectangle" x="13.119141" y="16.277588" rx="1.383899" width="2.767798" height="7.477547" transform="rotate(90 13.119141 16.277588)" fill="#FCFFFB" fill-opacity="0"/>
+                    <rect id="Rectangle" x="13.119141" y="16.277588" rx="1.383899" width="2.767798" height="7.477547" transform="rotate(90 13.119141 16.277588)" stroke="#151724" stroke-opacity="1.000000" stroke-width="1.000000"/>
+                    <path id="Path 3" d="" fill="#D8D8D8" fill-opacity="0" fill-rule="nonzero"/>
+                    <path id="Path 3" d="M4.40234 1.93433L0.5 1.93433C0.5 1.93433 0.537109 3.77417 1.51172 5.05151C2.48828 6.3291 4.40234 7.04419 4.40234 7.04419" stroke="#151724" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+                    <path id="Path 3" d="" fill="#D8D8D8" fill-opacity="0" fill-rule="nonzero"/>
+                    <path id="Path 3" d="M14.3848 1.93433L18.2871 1.93433C18.2871 1.93433 18.25 3.77417 17.2754 5.05151C16.2988 6.3291 14.3848 7.04419 14.3848 7.04419" stroke="#151724" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round"/>
+                </svg>
+                Достижения          
+            </a>
+            <a class="bottom-nav__elem">
+                <svg width="19.550781" height="21.000000" viewBox="0 0 19.5508 21" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <rect id="Rectangle" x="0.500000" y="1.948242" rx="5.000000" width="18.551743" height="18.551743" fill="#D8D8D8" fill-opacity="0"/>
+                    <rect id="Rectangle" x="0.500000" y="1.948242" rx="5.000000" width="18.551743" height="18.551743" stroke="#111321" stroke-opacity="1.000000" stroke-width="1.000000"/>
+                    <rect id="Rectangle" x="5.794922" rx="0.500000" width="1.000000" height="5.793109" fill="#111321" fill-opacity="1.000000"/>
+                    <rect id="Rectangle" x="5.794922" rx="0.500000" width="1.000000" height="5.793109" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                    <rect id="Rectangle Copy 2" x="12.699219" rx="0.500000" width="1.000000" height="5.793109" fill="#111321" fill-opacity="1.000000"/>
+                    <rect id="Rectangle Copy 2" x="12.699219" rx="0.500000" width="1.000000" height="5.793109" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                    <rect id="Rectangle" x="4.343750" y="10.413818" rx="0.500000" width="10.862081" height="1.000000" fill="#111321" fill-opacity="1.000000"/>
+                    <rect id="Rectangle" x="4.343750" y="10.413818" rx="0.500000" width="10.862081" height="1.000000" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                    <rect id="Rectangle Copy 3" x="4.343750" y="13.310303" rx="0.500000" width="10.862081" height="1.000000" fill="#111321" fill-opacity="1.000000"/>
+                    <rect id="Rectangle Copy 3" x="4.343750" y="13.310303" rx="0.500000" width="10.862081" height="1.000000" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                    <rect id="Rectangle Copy 4" x="4.343750" y="16.206787" rx="0.500000" width="10.862081" height="1.000000" fill="#111321" fill-opacity="1.000000"/>
+                    <rect id="Rectangle Copy 4" x="4.343750" y="16.206787" rx="0.500000" width="10.862081" height="1.000000" stroke="#979797" stroke-opacity="0" stroke-width="0.000000"/>
+                </svg>
+                Бриф          
+            </a>
+            <a class="bottom-nav__elem">
+                <svg width="15.966797" height="20.000000" viewBox="0 0 15.9668 20" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs/>
+                    <path id="Vector" d="M11.3516 0.129883C11.2715 0.0478516 11.1641 0.000976562 11.0488 0L2.11133 0C0.947266 0.00292969 0.00585938 0.943359 0 2.10571L0 17.8943C0.00585938 19.0566 0.947266 19.9971 2.11133 20L13.8555 20C15.0176 19.9971 15.9609 19.0566 15.9668 17.8943L15.9668 5.04761C15.9648 4.93726 15.9199 4.83203 15.8438 4.75366L11.3516 0.129883ZM11.4707 1.46118L14.543 4.62183L11.8906 4.62183C11.6602 4.62427 11.4727 4.44019 11.4707 4.21094L11.4707 1.46118ZM13.8555 19.1597L2.11133 19.1597C1.41211 19.1575 0.845703 18.593 0.839844 17.8943L0.839844 2.10571C0.845703 1.40698 1.41211 0.842529 2.11133 0.840332L10.6309 0.840332L10.6309 4.20728C10.6309 4.90112 11.1934 5.46289 11.8887 5.46216L15.127 5.46216L15.127 17.8943C15.1211 18.593 14.5547 19.1575 13.8555 19.1597Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <path id="Vector" d="M12.6895 16.0503L3.01758 16.0503C2.78516 16.0503 2.59766 16.2383 2.59766 16.4705C2.59766 16.7026 2.78516 16.8906 3.01758 16.8906L12.6895 16.8906C12.9219 16.8906 13.1094 16.7026 13.1094 16.4705C13.1094 16.2383 12.9219 16.0503 12.6895 16.0503Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <path id="Vector" d="M3.01758 14.6218L8.80859 14.6218C9.04102 14.6218 9.22852 14.4338 9.22852 14.2017C9.22852 13.9695 9.04102 13.7815 8.80859 13.7815L3.01758 13.7815C2.78516 13.7815 2.59766 13.9695 2.59766 14.2017C2.59766 14.4338 2.78516 14.6218 3.01758 14.6218Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <path id="Vector" d="M3.31836 11.9326L9.13867 11.9326C9.37109 11.9326 9.58008 11.7373 9.58008 11.5054L9.58008 10.9741C9.57422 9.36304 8.26367 8.06177 6.65234 8.06714L5.80469 8.06714C4.20312 8.06348 2.90234 9.3584 2.89844 10.9595L2.89844 11.5054C2.89648 11.7385 3.08398 11.9292 3.31836 11.9326ZM3.73828 10.9741C3.74023 9.8335 4.66406 8.90894 5.80469 8.90747L6.65234 8.90747C7.79102 8.90747 8.73828 9.83472 8.73828 10.9741L8.73828 11.0923L3.73828 11.0923L3.73828 10.9741Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    <path id="Vector" d="M6.23633 7.89087C7.39062 7.89087 8.32812 6.95386 8.32812 5.79785C8.32812 4.64209 7.39062 3.70508 6.23633 3.70508C5.08008 3.70508 4.14258 4.64209 4.14258 5.79785C4.14258 6.95386 5.08008 7.89087 6.23633 7.89087ZM6.23633 4.54541C6.92773 4.54541 7.48828 5.10596 7.48828 5.79785C7.48828 6.48975 6.92773 7.05054 6.23633 7.05054C5.54297 7.05054 4.98242 6.48975 4.98242 5.79785C4.98242 5.10596 5.54297 4.54541 6.23633 4.54541Z" fill="#000000" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </svg>
+                Портфолио          
+            </a>
+        </nav>
         <section class="main">
             <div class="background_text background_title_1">FUTURE</div>
             <div class="background_text background_title_2">DESIGN</div>
@@ -93,7 +170,7 @@
                 <p>Объединяя опыт и видение будущего, технологии и дизайн, <span>мы помогаем бизнесу быть на шаг впереди в цифровом мире.</span> Помогаем привлечь клиентов из интернета и <span>повысить известность компании.</span> Для этого создаем сайты, в которых:</p>
             </div>
             <div class="offer-img">
-                <img src="assets/images/a53acdd2e8ecc2d42f0fba688aa6d1e7.png">
+                <div class="wrapper"></div>
                 <div></div>
             </div>
             <div class="offer-bottom">
@@ -281,7 +358,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
             </div>
             <div class="team-img">
-                <img src="assets/images/Rectangle 5.png">
+                <div class="team_img" style="background: url(assets/images/Rectangle-5.png); background-size: contain;"></div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="982" height="952" viewBox="0 0 982 952" fill="none">
                     <path opacity="0.2" d="M1 336V946C1 948.761 3.23857 951 6 951H976C978.761 951 981 948.761 981 946V6C981 3.23858 978.761 1 976 1L6 1C3.23858 1 1 3.23858 1 6L1 105.5" stroke="#0E101F"/>
                 </svg>
@@ -373,5 +450,10 @@
             </ul>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="assets/scripts/jquery.ripples-min.js"></script>
+    <script src="assets/scripts/main.js"></script>
 </body>
 </html>
