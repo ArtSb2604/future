@@ -183,16 +183,16 @@ $(document).ready(function () {
 new hoverEffect({
   parent: document.querySelector(".wrapper"),
   intensity: 0.5,
-  image1: "/assets/images/a53acdd2e8ecc2d42f0fba688aa6d1e7.png",
-  image2: "/assets/images/a53acdd2e8ecc2d42f0fba688aa6d1e7.png",
+  image1: "/future/assets/images/a53acdd2e8ecc2d42f0fba688aa6d1e7.png",
+  image2: "/future/assets/images/a53acdd2e8ecc2d42f0fba688aa6d1e7.png",
   displacementImage: "https://i.postimg.cc/QNTRDRks/4.png"
 });
 
 new hoverEffect({
   parent: document.querySelector(".team_img"),
   intensity: 0.5,
-  image1: "/assets/images/Rectangle-5.png",
-  image2: "/assets/images/Rectangle-5.png",
+  image1: "/future/assets/images/Rectangle-5.png",
+  image2: "/future/assets/images/Rectangle-5.png",
   displacementImage: "https://i.postimg.cc/QNTRDRks/4.png"
 });
 
