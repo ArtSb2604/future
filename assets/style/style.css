@@ -32,6 +32,7 @@ header {
     justify-content: space-between;
     width: 100%;
     top: 0;
+    z-index: 999;
 }
 
 header ul {
@@ -84,6 +85,16 @@ header .social-btn a {
     z-index: 1;
 }
 
+.social-btn a:hover {
+    bottom: -0.7rem;
+    right: -0.7rem;
+    background: #2DB1FB;
+}
+
+.social-btn a:hover svg path {
+    stroke: #fff;
+}
+
 header .social_effect {
     content: "";
     border: 0.1rem solid #2DB1FB;
@@ -111,6 +122,18 @@ header .btn-form {
     position: relative;
     border: 1px solid #2DB1FB;
     background: #2DB1FB;
+}
+
+header .btn-form:hover {
+    bottom: -0.7rem;
+    right: -0.7rem;
+    color: #2DB1FB;
+    background: #fff;
+}
+
+header .btn-form:hover:after {
+    bottom: 0rem;
+    right: 0rem;
 }
 
 header .btn-form:after {
@@ -239,6 +262,19 @@ main {
     border: 0.1rem solid #2DB1FB;
     background: #2DB1FB;
     position: relative;
+    z-index: 999;
+}
+
+.main-btn_blue:hover {
+    bottom: -0.7rem;
+    right: -0.7rem;
+    background: #fff;
+    color: #2DB1FB;
+}
+
+.main-btn_blue:hover::after {
+    bottom: -0rem;
+    right: -0rem;
 }
 
 .main-btn_blue::after {
@@ -249,6 +285,7 @@ main {
     bottom: -0.7rem;
     right: -0.7rem;
     border: 1px solid #2DB1FB;
+    z-index: 1;
 }
 
 .main-btn_white {
@@ -271,6 +308,18 @@ main {
     align-items: center;
     z-index: 1;
     position: relative;
+}
+
+.main-btn_white:hover a {
+    bottom: -0.7rem;
+    right: -0.7rem;
+    background: #2DB1FB;
+    color: #fff;
+}
+
+.main-btn_white:hover div {
+    bottom: -0.7rem;
+    right: -0.7rem;
 }
 
 .main-btn_white div {
@@ -322,13 +371,13 @@ main {
 
 .main__star_3 {
     position: absolute;
-    right: 12.5rem;
-    top: 81rem;
+    right: 17.5rem;
+    top: 83.5rem;
 }
 
 .main__star_3 svg {
-    width: 10rem;
-    height: 10rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .offer {
@@ -443,13 +492,15 @@ main {
 
 .offer-img .wrapper {
     width: 140rem;
-    height: 100%;
+    height: 60vh;
+    max-height: 60vh;
     object-fit: cover;
     right: -6.5rem;
     top: -6.5rem;
     position: absolute;
     z-index: 0;
 }
+
 
 .offer-bottom {
     display: flex;
@@ -490,6 +541,20 @@ main {
     backdrop-filter: blur(1rem);
     z-index: 1;
     position: relative;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+
+.offer__elem:hover {
+    background: #2DB1FB;
+    border: 0.1rem solid #fff;
+}
+
+.offer__elem:hover .offer__elem-left,
+.offer__elem:hover .offer__elem-right {
+    color: #fff;
+    border-right: 0.1rem solid #fff;
 }
 
 .offer__elem-left {
@@ -523,6 +588,7 @@ main {
     padding: 0 3.8rem;
 }
 
+
 .portfolio {
     width: 100vw;
     height: 108rem;
@@ -532,6 +598,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 10rem;
 }
 
 .portfolio .subtitle-img {
@@ -599,7 +666,7 @@ main {
 .works {
     width: 100vw;
     height: 100%;
-    padding: 10rem 12.5rem;
+    padding: 0rem 12.5rem 10rem 12.5rem;
     z-index: 1;
     position: relative;
     display: flex;
@@ -818,7 +885,7 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .team .subtitle-img {
@@ -835,6 +902,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+    margin-top: 10rem;
 }
 
 .team-block h1 {
@@ -1735,15 +1803,25 @@ footer a {
     display: none;
 }
 
-.main__star_1, .main__star_2 {
-    animation: scaleAnimation 3s infinite alternate; 
+.main__star_1 {
+    animation: scaleAnimation 6s infinite alternate; 
+}
+
+.main__star_2 {
+    animation: scaleAnimation1 6s infinite alternate; 
+    animation-delay: 2s;
 }
 
 .main__star_3 {
-    animation: scaleAnimation1 3s infinite alternate; 
+    animation: scaleAnimation2 6s infinite alternate; 
+    animation-delay: 3s;
 }
 
-.star_1, .star_2 {
+.star_1 {
+    animation: scaleAnimation 3s infinite alternate; 
+}
+
+.star_2 {
     animation: scaleAnimation 3s infinite alternate; 
 }
 
@@ -1752,22 +1830,46 @@ footer a {
 }
 
 @keyframes scaleAnimation {
-  0% {
-    transform: scale(1); /* Начальный размер элемента */
-  }
-  100% {
-    transform: scale(2.2); /* Конечный размер элемента */
-  }
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes scaleAnimation1 {
     0% {
-      transform: scale(1); /* Начальный размер элемента */
+        transform: scale(1);
     }
+
+    50% {
+        transform: scale(1.5);
+    }
+
     100% {
-      transform: scale(0.5); /* Конечный размер элемента */
+        transform: scale(1);
     }
-  }
+}
+
+@keyframes scaleAnimation2 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 @media screen and (max-width: 800px) {
 
