@@ -473,7 +473,7 @@ main {
 
 .offer-img {
     width: 140rem;
-    height: 85%;
+    height: 80rem;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -492,7 +492,7 @@ main {
 
 .offer-img .wrapper {
     width: 140rem;
-    height: 60vh;
+    height: 70rem;
     max-height: 60vh;
     object-fit: cover;
     right: -6.5rem;
@@ -501,6 +501,11 @@ main {
     z-index: 0;
 }
 
+.offer-img .wrapper canvas {
+    height: 70rem !important;
+    width: 140rem !important;
+    object-fit: fill !important;
+}
 
 .offer-bottom {
     display: flex;
@@ -2718,6 +2723,8 @@ footer a {
         right: 0;
         top: 0;
     }
+
+    
 
     .contacts {
         padding-bottom: 10rem;
